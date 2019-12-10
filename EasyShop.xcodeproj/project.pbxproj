@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,15 @@
 		2AE3DCB023A012EE006A76D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AE3DCAE23A012EE006A76D2 /* Main.storyboard */; };
 		2AE3DCB223A012F1006A76D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE3DCB123A012F1006A76D2 /* Assets.xcassets */; };
 		2AE3DCB523A012F1006A76D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AE3DCB323A012F1006A76D2 /* LaunchScreen.storyboard */; };
+		2AE3DCBF23A013A3006A76D2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3DCBE23A013A3006A76D2 /* SignInViewController.swift */; };
+		2AE3DCC123A013DF006A76D2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3DCC023A013DF006A76D2 /* SignUpViewController.swift */; };
+		2AE3DCC323A022DB006A76D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AE3DCC223A022DB006A76D2 /* GoogleService-Info.plist */; };
+		2AE3DCC523A02AA9006A76D2 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3DCC423A02AA9006A76D2 /* PostViewController.swift */; };
+		81918CE587B1721E42F4BA4C /* Pods_EasyShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECE5BA6D5BED042294E8083 /* Pods_EasyShop.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B2DD13A07FB2F6C55DBFB89 /* Pods-EasyShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShop.debug.xcconfig"; path = "Target Support Files/Pods-EasyShop/Pods-EasyShop.debug.xcconfig"; sourceTree = "<group>"; };
 		2AE3DCA523A012EE006A76D2 /* EasyShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE3DCA823A012EE006A76D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AE3DCAA23A012EE006A76D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,12 @@
 		2AE3DCB123A012F1006A76D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AE3DCB423A012F1006A76D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AE3DCB623A012F1006A76D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AE3DCBE23A013A3006A76D2 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		2AE3DCC023A013DF006A76D2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2AE3DCC223A022DB006A76D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2AE3DCC423A02AA9006A76D2 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		7E6916D6FFE7B28B94568C81 /* Pods-EasyShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShop.release.xcconfig"; path = "Target Support Files/Pods-EasyShop/Pods-EasyShop.release.xcconfig"; sourceTree = "<group>"; };
+		EECE5BA6D5BED042294E8083 /* Pods_EasyShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81918CE587B1721E42F4BA4C /* Pods_EasyShop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				2AE3DCA723A012EE006A76D2 /* EasyShop */,
 				2AE3DCA623A012EE006A76D2 /* Products */,
+				7FB2AD2C547448B6A39EC2D0 /* Pods */,
+				541F4D47055366305D1C1E70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +71,36 @@
 		2AE3DCA723A012EE006A76D2 /* EasyShop */ = {
 			isa = PBXGroup;
 			children = (
+				2AE3DCC223A022DB006A76D2 /* GoogleService-Info.plist */,
 				2AE3DCA823A012EE006A76D2 /* AppDelegate.swift */,
 				2AE3DCAA23A012EE006A76D2 /* SceneDelegate.swift */,
 				2AE3DCAC23A012EE006A76D2 /* ViewController.swift */,
 				2AE3DCAE23A012EE006A76D2 /* Main.storyboard */,
+				2AE3DCC423A02AA9006A76D2 /* PostViewController.swift */,
+				2AE3DCC023A013DF006A76D2 /* SignUpViewController.swift */,
+				2AE3DCBE23A013A3006A76D2 /* SignInViewController.swift */,
 				2AE3DCB123A012F1006A76D2 /* Assets.xcassets */,
 				2AE3DCB323A012F1006A76D2 /* LaunchScreen.storyboard */,
 				2AE3DCB623A012F1006A76D2 /* Info.plist */,
 			);
 			path = EasyShop;
+			sourceTree = "<group>";
+		};
+		541F4D47055366305D1C1E70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EECE5BA6D5BED042294E8083 /* Pods_EasyShop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FB2AD2C547448B6A39EC2D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B2DD13A07FB2F6C55DBFB89 /* Pods-EasyShop.debug.xcconfig */,
+				7E6916D6FFE7B28B94568C81 /* Pods-EasyShop.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AE3DCB923A012F1006A76D2 /* Build configuration list for PBXNativeTarget "EasyShop" */;
 			buildPhases = (
+				A299C8EAD103EC9100AC8D18 /* [CP] Check Pods Manifest.lock */,
 				2AE3DCA123A012EE006A76D2 /* Sources */,
 				2AE3DCA223A012EE006A76D2 /* Frameworks */,
 				2AE3DCA323A012EE006A76D2 /* Resources */,
+				E871159195AD38070190C103 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AE3DCB523A012F1006A76D2 /* LaunchScreen.storyboard in Resources */,
+				2AE3DCC323A022DB006A76D2 /* GoogleService-Info.plist in Resources */,
 				2AE3DCB223A012F1006A76D2 /* Assets.xcassets in Resources */,
 				2AE3DCB023A012EE006A76D2 /* Main.storyboard in Resources */,
 			);
@@ -133,13 +172,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A299C8EAD103EC9100AC8D18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyShop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E871159195AD38070190C103 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyShop/Pods-EasyShop-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyShop/Pods-EasyShop-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyShop/Pods-EasyShop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2AE3DCA123A012EE006A76D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AE3DCC523A02AA9006A76D2 /* PostViewController.swift in Sources */,
+				2AE3DCC123A013DF006A76D2 /* SignUpViewController.swift in Sources */,
 				2AE3DCAD23A012EE006A76D2 /* ViewController.swift in Sources */,
 				2AE3DCA923A012EE006A76D2 /* AppDelegate.swift in Sources */,
+				2AE3DCBF23A013A3006A76D2 /* SignInViewController.swift in Sources */,
 				2AE3DCAB23A012EE006A76D2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +300,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,9 +366,11 @@
 		};
 		2AE3DCBA23A012F1006A76D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B2DD13A07FB2F6C55DBFB89 /* Pods-EasyShop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48DBVP79C8;
 				INFOPLIST_FILE = EasyShop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,9 +385,11 @@
 		};
 		2AE3DCBB23A012F1006A76D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E6916D6FFE7B28B94568C81 /* Pods-EasyShop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48DBVP79C8;
 				INFOPLIST_FILE = EasyShop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
